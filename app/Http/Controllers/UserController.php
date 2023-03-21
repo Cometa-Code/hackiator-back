@@ -40,4 +40,11 @@ class UserController extends Controller
 
         return RES::NOTFOUND();
     }
+
+    public function user()
+    {
+        $user = Auth::user();
+
+        return $user;
+    }
 }
